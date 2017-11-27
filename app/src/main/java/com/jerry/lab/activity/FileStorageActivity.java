@@ -2,7 +2,6 @@ package com.jerry.lab.activity;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,7 +17,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class FileStorageActivity extends AppCompatActivity {
+public class FileStorageActivity extends BaseActivity {
 
     private EditText et_StrToSave;
     private Button btn_read, btn_save;
