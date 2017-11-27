@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:textColor="#f00"
+            android:id="@+id/btn_forceOffline"
+            style="@style/buttonStyle"
+            android:text="Send force offline broadcast" />
+
+        <Button
+            android:id="@+id/btn_toOAA"
+            style="@style/buttonStyle"
+            android:text="toOAA" />
+
+        <Button
+            android:id="@+id/btn_sendToastMSG"
+            style="@style/buttonStyle"
+            android:text="sendToastMSG" />
+
+        <Button
+            android:id="@+id/btn_toFSA"
+            style="@style/buttonStyle"
+            android:text="to file storage " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>
