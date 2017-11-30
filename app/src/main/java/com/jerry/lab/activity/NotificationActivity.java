@@ -8,34 +8,26 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 
 import com.jerry.lab.R;
 
-public class OtherAppActivity extends BaseActivity {
+public class NotificationActivity extends BaseActivity {
 
-    TextView tv_text;
+    private Button btn_sendNotification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_other);
+        setContentView(R.layout.activity_notification);
 
-        tv_text = (TextView) findViewById(R.id.tv_text);
-
-        Intent intent = getIntent();
-
-        if (intent != null) {
-            tv_text.setText(intent.getStringExtra("msg"));
-        }
-    }
-
-    public void back(View view) {
-        buildNotification();
-        Intent intent = new Intent();
-        intent.putExtra("result", "OK! I am back!");
-        setResult(RESULT_OK, intent);
-        finish();
+        btn_sendNotification = (Button) findViewById(R.id.btn_sendNotification);
+        btn_sendNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buildNotification();
+            }
+        });
     }
 
     private void buildNotification() {

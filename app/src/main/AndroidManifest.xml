@@ -10,7 +10,6 @@
         android:theme="@style/AppTheme">
 
         <!-- 活动 -->
-        <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,17 +17,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.OtherAppActivity">
             <intent-filter>
-                <action android:name="com.intent.action.activity4" />
+                <action android:name="com.intent.action.labProject" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.FileStorageActivity" />
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:label="NotificationActivity" />
 
         <!-- 广播接收者 -->
         <receiver
-            android:name=".broadcast.ToastMsgReceiver"
+            android:name=".broadcast.StaticRegisterReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -40,7 +44,6 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".activity.FileStorageActivity"></activity>
     </application>
 
 </manifest>

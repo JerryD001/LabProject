@@ -12,25 +12,31 @@
         android:orientation="vertical">
 
         <Button
-            android:textColor="#f00"
             android:id="@+id/btn_forceOffline"
             style="@style/buttonStyle"
-            android:text="Send force offline broadcast" />
+            android:text="Send force offline broadcast"
+            android:textColor="#f00" />
+
+        <Button
+            android:id="@+id/btn_sendBroadcast"
+            style="@style/buttonStyle"
+            android:text="send broadcast" />
 
         <Button
             android:id="@+id/btn_toOAA"
             style="@style/buttonStyle"
-            android:text="toOAA" />
+            android:text="OtherAppActivity" />
 
-        <Button
-            android:id="@+id/btn_sendToastMSG"
-            style="@style/buttonStyle"
-            android:text="sendToastMSG" />
 
         <Button
             android:id="@+id/btn_toFSA"
             style="@style/buttonStyle"
-            android:text="to file storage " />
+            android:text="FileStorageActivity" />
+
+        <Button
+            android:id="@+id/btn_toNA"
+            style="@style/buttonStyle"
+            android:text="NotificationActivity" />
     </LinearLayout>
 
     <LinearLayout
